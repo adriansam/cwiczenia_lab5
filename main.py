@@ -111,22 +111,118 @@ import numpy as np
 #
 # print(a[2:5])
 
-mat = np.arange(25)
+# mat = np.arange(25)
+#
+# mat = mat.reshape((5,5))
+# print(mat)
+# print(mat[1:])
+# print(mat[:,1])
+# print(mat[:,1:2])
+# print(mat[:,-1:])
+# print(mat[2:5, 1:3])
+# print(mat[:, range(2, 5, 2)])
+#
+# x = np.array([[0, 1, 2], [3, 4, 5], [6, 7, 8], [9, 10, 11]])
+# print(x)
+#
+# rows = np.array([[0, 0], [3, 3]])
+# cols = np.array([[0, 2], [0, 2]])
+#
+# y = x[rows, cols]
+# print(y)
 
-mat = mat.reshape((5,5))
-print(mat)
-print(mat[1:])
-print(mat[:,1])
-print(mat[:,1:2])
-print(mat[:,-1:])
-print(mat[2:5, 1:3])
-print(mat[:, range(2, 5, 2)])
+#czesc2
 
-x = np.array([[0, 1, 2], [3, 4, 5], [6, 7, 8], [9, 10, 11]])
-print(x)
+# #inicjujemy dane
+# a = np.array([20, 30, 40, 50])
+# b = np.arange(4)
+# print(a)
+# print(b)
+# #wykonamy działanie odejmowania na tablicach i zapiszemy wynik do nowej zmiennej
+# c = a - b
+# print(c)
+#
+# #wykonujemy operacje kwadrat zawartosci danej tablicy
+# print(b**2)
+#
+# #możemye również modyfikować obecne dane z tablicy
+# a += b
+# print(a)
+# a -= b
+# print(a)
 
-rows = np.array([[0, 0], [3, 3]])
-cols = np.array([[0, 2], [0, 2]])
+# a = np.arange(12).reshape(3, 4)
+# print(a)
+#
+# #suma całej macierzy, czyli suma wszystkich elementów z macierzy 3x4
+# print(a.sum())
+# #suma każdej z kolumn
+# print(a.sum(axis=0))
+# #minimum każdego z rzędów, inaczej mówiąc wartość min. z każdego wiersza
+# print(a.min(axis=1))
+# #skumulowana suma dla wierszy
+# print(a.cumsum(axis=1))
 
-y = x[rows, cols]
-print(y)
+
+# a = np.arange(3)
+# b = np.arange(3)
+# print(a)
+# print(b)
+# print(a.dot(b))
+# print(np.dot(a, b))
+
+# a = np.array([[2, 1, 3], [-1, 2, 4]])
+# print(a)
+# b = np.array([[1, 3], [2, -2], [-1, 4]])
+# print(b)
+# print(np.dot(a, b))
+
+# a = np.ones(3, dtype='int32')
+# print(a)
+# print(a.dtype)
+# b = np.linspace(0, np.pi, 3)
+# print(b)
+# print(b.dtype)
+#
+# #do zmiennej c zostanie zapisany wynik dodawania macierzy a i b
+# c = a + b
+# print(c)
+# print(c.dtype)
+#
+# d = np.exp(c*1j)
+# print(d)
+# print(d.dtype)
+
+# a = np.arange(3)
+# print(a)
+# print(np.exp(a))
+# print(np.sqrt(a))
+#
+# b = np.array([2., -1., 4.])
+# print(np.add(a, b))
+
+# a = np.arange(6).reshape(3, 2)
+# print(a)
+#
+# for b in a.flat:
+#     print(b)
+#     print("")
+
+#generujemy macierz 1x6
+a = np.arange(6)
+print(a)
+print(a.shape)
+print('')
+b = a.reshape(2, 3)
+print(b)
+print(b.shape)
+print('')
+# c = a.reshape(3, 2)
+# print(c)
+# print(c.shape)
+#
+# d = c.ravel()
+# print(d)
+
+e = b.T
+print(e)
